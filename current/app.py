@@ -8,7 +8,7 @@ app = Flask(__name__, template_folder='templates')
 def index():
     return render_template('index.html')
 
-
+## Hello
 @app.route('/get_stock_data', methods=['POST'])
 def get_stock_data():
     try:
