@@ -16,7 +16,7 @@ def get_stock_data():
         data = yf.Ticker(ticker).history(period='1y')  # Use the 'ticker' variable, not the string 'ticker'
 
         if data.empty:
-            return jsonify({'error': 'No data available for this ticker no'}), 400
+            return jsonify({'error': 'No data available for this ticker'}), 400
 
         return jsonify({'current_price': data.iloc[-1].Close, 'open_price': data.iloc[-1].Open})
 

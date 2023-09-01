@@ -1,69 +1,109 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Form styles */
+form {
+    text-align: center;
+    margin: 20px auto;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Ticker grid styles */
 #tickers-grid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 800px;
 }
 
 .stock-box {
     width: 200px;
     height: 200px;
-    border: 1px solid #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     margin: 10px;
     padding: 10px;
-    transition: background-color 0.5s;
-    background: #eee;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.light-red {
-    color: red;
+.stock-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.dark-red {
-    color: #880000;
+.stock-box p {
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 
-.gray {
-    color: #808080;
+.remove-btn {
+    padding: 5px 10px;
+    background-color: #FF3333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.dark-green {
-    color: #00BB00;
+.remove-btn:hover {
+    background-color: #d41c1c;
+}
+/* Center the timer text */
+#timer-container {
+    text-align: center;
+    margin: 20px auto;
 }
 
-.light-green {
-    color: #006600;
+#timer {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
 }
 
-#tickers-grid {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* Define a unique class for your stock boxes under #ticker-grid */
-.stock-box {
-    width: 200px;
-    height: 200px;
-    border: 1px solid #333;
-    margin: 10px;
-    padding: 10px;
-    color: black;
-}
-
-.updated {
-    transition: background-color 1s;
-    background-color: #f0f0f0 !important; /* Light gray */
-}
-
-.red-flash {
-    transition: background-color 1s;
-    background-color: #ff0000 !important; /* Red */
-}
-
-.green-flash {
-    transition: background-color 1s;
-    background-color: #00FF00 !important; /* Green */
-}
-
-.gray-flash {
-    transition: background-color 1s;
-    background-color: #808080 !important; /* Gray */
-}
