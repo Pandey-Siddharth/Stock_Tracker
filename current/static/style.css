@@ -1,0 +1,69 @@
+#tickers-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stock-box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #333;
+    margin: 10px;
+    padding: 10px;
+    transition: background-color 0.5s;
+    background: #eee;
+}
+
+.light-red {
+    color: red;
+}
+
+.dark-red {
+    color: #880000;
+}
+
+.gray {
+    color: #808080;
+}
+
+.dark-green {
+    color: #00BB00;
+}
+
+.light-green {
+    color: #006600;
+}
+
+#tickers-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Define a unique class for your stock boxes under #ticker-grid */
+.stock-box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #333;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+}
+
+.updated {
+    transition: background-color 1s;
+    background-color: #f0f0f0 !important; /* Light gray */
+}
+
+.red-flash {
+    transition: background-color 1s;
+    background-color: #ff0000 !important; /* Red */
+}
+
+.green-flash {
+    transition: background-color 1s;
+    background-color: #00FF00 !important; /* Green */
+}
+
+.gray-flash {
+    transition: background-color 1s;
+    background-color: #808080 !important; /* Gray */
+}
